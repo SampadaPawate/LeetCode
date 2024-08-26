@@ -1,16 +1,21 @@
 class Solution:
     def lengthOfLastWord(self, s: str) -> int:
-        count=0
-        txt=s.strip()
-        txt=txt[::-1]
-        for i in txt:
-            if i==" ":
-                break
-            else:
-                count+=1
+        s = s.split()
+        return len(s[-1])
+
+
+
+        # count=0
+        # txt=s.strip()
+        # txt=txt[::-1]
+        # for i in txt:
+        #     if i==" ":
+        #         break
+        #     else:
+        #         count+=1
                 
             
-        return count
+        # return count
 
 
 
